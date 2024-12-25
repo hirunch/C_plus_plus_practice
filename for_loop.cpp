@@ -2,8 +2,13 @@
 
 int main(){
 
-    for(int i = 1; i < 10; i++){
-        std::cout << i << "\t" << "Hello C++ For Loop\n";
+    for(int i = 100; i > 0; i--){
+        if(i % 2 == 0){
+            std::cout << i << "\t" << "Even Number\n";
+        }
+        else{
+            std::cout << i << "\t" << "ODD Number\n";
+        }
     }
 }
 
