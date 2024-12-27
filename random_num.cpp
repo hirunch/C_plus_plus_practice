@@ -3,12 +3,11 @@
 
 int main(){
 
-    int randomNumber = rand() % 100;
+    int randomNumber = rand() % 10;
     int userNum;
     int i = 3;
 
-    std::cout << "\t Number Guess \n \n";
-    std::cout << randomNumber <<"\n";
+    std::cout << "\t Number Guess (0 -10) \n \n";
 
     std::cout << "Enter Number you have (" << i << ") time: ";
     std::cin >> userNum;
@@ -28,8 +27,9 @@ int main(){
 
                 }else if(randomNumber != userNum){
                     i--;
-                }else{
-                    std::cout << "you are losses!";
+                    if( i == 0){
+                        std::cout << "You are lose!";
+                    }
                 }
 
             }
